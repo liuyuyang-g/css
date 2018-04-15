@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #nav li{
+                list-style: none;
+                float: left;
+                width: 100px;
+                height: 30px;
+                background: mediumspringgreen;
+                margin-right:3px;
+                text-align: center;
+            }
+            #nav > li:hover{
+                background: orange;
+                /*height: 60px;*/
+            }
+            #nav .menu:hover{
+                background: #fff;
+            }
+            #nav .menu{
+                clear: both;
+                display: none;
+            }
+            #nav a{
+                text-decoration: none;
+                line-height: 30px;
+                display:block;
+                width: 100px;
+            }
+            #nav{
+                width: 500px;
+                /*margin: 0;*/
+                /*padding: 0;*/
+            }
+            #nav .last{
+                margin-right: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="nav">
+            <li>
+                <a href="" name="first">link1</a>
+            </li>
+            <li>
+                <a href="">link2
+                    <ul class="menu">
+                        <li>aa</li>
+                        <li>bb</li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="">link3</a>
+            </li>
+            <li>
+                <a href="" class="last">link4</a>
+            </li>
+        </ul>
+    </body>
+</html>
