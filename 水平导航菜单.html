@@ -17,16 +17,15 @@
                 margin-right:3px;
                 text-align: center;
             }
-            #nav > li:hover{
+            #nav li:hover{
                 background: orange;
-                /*height: 60px;*/
             }
-            #nav .menu:hover{
-                background: #fff;
-            }
-            #nav .menu{
+            #menu{
                 clear: both;
                 display: none;
+            }
+            #nav li:hover ul{
+                display: block;
             }
             #nav a{
                 text-decoration: none;
@@ -47,15 +46,14 @@
     <body>
         <ul id="nav">
             <li>
-                <a href="" name="first">link1</a>
+                <a href="">link1</a>
             </li>
             <li>
-                <a href="">link2
-                    <ul class="menu">
-                        <li>aa</li>
-                        <li>bb</li>
-                    </ul>
-                </a>
+                <a href="">link2</a>
+                <ul id="menu">
+                    <li>aa</li>
+                    <li>bb</li>
+                </ul>
             </li>
             <li>
                 <a href="">link3</a>
