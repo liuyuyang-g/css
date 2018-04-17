@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>天猫tmall.com--理想生活上天猫</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            ul li{
+                background: lightgray;
+            }
+            #nav1 li{
+                list-style: none;
+                float: left;
+                margin-left: 10px;
+            }
+            #nav1 a{
+                text-decoration: none;
+                color: #000;
+                display: block;
+            }
+            #nav2 li{
+                list-style: none;
+                float: right;
+                margin-right: 10px;
+            }
+            #nav2 a{
+                text-decoration: none;
+                color: #000;
+                display: block;
+            }
+            #collection{
+                margin-right: 50px;
+            }
+            #nav1 a:hover{
+                color: orange;
+            }
+            #nav2 a:hover{
+                color: orange;
+            }
+            #mytaobao1{
+                margin-right: 50px;
+            }
+            #mytaobao{
+                display: none;
+                padding-left: 0;
+            }
+            #nav2 .secondmenu{
+                clear: both;
+            }
+            #nav2 li:hover ul{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <ul id="nav1">
+                <li>瞄，欢迎来到天猫</li>
+                <li>
+                    <a href="" class="click1">请登录</a>
+                </li>
+                <li>
+                    <a href="" class="click1">免费注册</a>
+                </li>
+            </ul>
+            <ul id="nav2">
+                <li>
+                    <a href="" id="collection">收藏夹</a>
+                    <ul id="mytaobao">
+                        <li class="secondmenu">
+                            <a href="">收藏的宝贝</a>
+                        </li>
+                        <li class="secondmenu">
+                            <a href="">收藏的店铺</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">购物车</a>
+                </li>
+                <li>
+                    <a href="" id="mytaobao1">我的淘宝</a>
+                    <ul id="mytaobao">
+                        <li class="secondmenu">
+                            <a href="">已买到的宝贝</a>
+                        </li>
+                        <li class="secondmenu">
+                            <a href="">已卖出的宝贝</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
